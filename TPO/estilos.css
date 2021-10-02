@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: darkgray;
+}
+
+.father{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        display: flex;
+        font-size: 20px;
+        background-color: rgb(21, 166, 210);
+    }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 auto;
+            font-size: 25px;
+        }
+            .logo a{
+                color: white;
+            }
+        .nav{
+            display: flex;
+            justify-content: center;
+            flex: 4 1 auto;
+        }
+            .menu-inicio{
+                display: flex;
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+            .menu-inicio a:hover{
+                color: greenyellow;
+            }
+            .menu-eolica{
+                display: flex;
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+            .menu-eolica a:hover{
+                color: greenyellow;
+            }
+            .menu-solar{
+                display: flex;
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+            .menu-solar a:hover{
+                color: greenyellow;
+            }
+            .nav a{
+                color: white;
+            }
+        .redes{
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: flex-end;
+            align-items: center;
+        }
+            .facebook a:hover{
+                color: greenyellow;
+            }
+            .twitter a:hover{
+                color: greenyellow;
+            }
+            .youtube a:hover{
+                color: greenyellow;
+            }
+            .twitch a:hover{
+                color: greenyellow;
+            }
+            .redes-text{
+                color: white;
+            }
+            .redes a{
+                color: white;
+            }
+    .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+.section{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .imageneolica{
+        display: flex;
+        align-items: center;
+        background-image: url(/TPO/images/eolica.png);
+    }
+    .infoeolica{
+        width: 313px;
+        height: 279px;
+        background-color: rgba(21, 166, 210, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+        .infoeolica a{
+            color: black;
+        }
+    .imageneolica:hover .infoeolica{
+        opacity: 1;
+    }
+    .maseolica{
+        position: absolute;
+        transition: margin 0.2s;
+        margin-top: -25px;
+        margin-left: -25px;
+        font-size: 40px;
+    }
+    .imageneolica:hover .maseolica{
+        margin-top: 95px;
+        margin-left: 45px;
+    }
+    .e-eolica{
+        background-color: rgb(21, 166, 210);
+        display: flex;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .e-solar{
+        background-color: rgb(40, 181, 115);
+        display: flex;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+.footer{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 40px;
+}
+    .redes-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;            
+        flex: 1 1 auto;
+        height: 150px;
+        font-size: 50px;
+    }
+        .facebook-footer{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .twitter-footer{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .youtube-footer{  
+            margin-left: 50px;
+            margin-right: 50px;   
+        }
+        .twitch-footer{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .footer a{
+            color: white;
+        }
+.footer-texto{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-derechos{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
