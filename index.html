@@ -20,18 +20,18 @@
                 </div>
                 <nav class="nav">
                     <div class="menu-inicio">
-                        <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                        <a href="index.html"><i class="fas fa-home" style="margin-right: 5px;"></i><span class="off">Inicio</span></a>
                     </div>
                     <div class="menu-eolica">
-                        <a href="eolica.html"><i class="fas fa-wind"></i>Energía Eólica</a>
+                        <a href="eolica.html"><i class="fas fa-wind" style="margin-right: 5px;"></i><span class="off">Energía Eólica</span></a>
                     </div>
                     <div class="menu-solar">
-                        <a href="solar.html"><i class="fas fa-sun"></i></i>Energía Solar</a>
+                        <a href="solar.html"><i class="fas fa-sun" style="margin-right: 5px;"></i><span class="off">Energía Solar</span></a>
                     </div>
                 </nav>
                 <div class="redes">
                     <div class="redes-text">
-                        Seguinos!
+                        <span class="off">Seguinos!</span>
                     </div>                
                     <div class="facebook">
                         <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -56,20 +56,20 @@
             <div class="e-eolica">
                 <div class="imageneolica">
                     <div class="infoeolica">
-                        <p class="maseolica"><a href="eolica.html">Leer mas</a></p>
+                        <p class="maseolica"><a href="eolica.html">LEER MAS</a></p>
                     </div>
                 </div>
                 <div class="textoeolica">
-                    La energía eólica es la energía que se obtiene a partir del viento, es decir, es el aprovechamiento de la energía cinética de las masas de aire. El término «eólico» proviene del latín aeolicus, o «perteneciente o relativo a Eolo», dios de los vientos en la mitología griega. Querés seguir leyendo? Hacé click sobre la imagen de la izquierda!
+                    <span class="resumen">La energía eólica es la energía que se obtiene a partir del viento, es decir, es el aprovechamiento de la energía cinética de las masas de aire. El término «eólico» proviene del latín aeolicus, o «perteneciente o relativo a Eolo», dios de los vientos en la mitología griega. Querés seguir leyendo? Hacé click sobre la imagen </span>
                 </div>
             </div>
             <div class="e-solar"> 
-                <div class="textosolar">
-                    La energía solar es una energía renovable, obtenida a partir del aprovechamiento de la radiación electromagnética procedente del Sol. La radiación solar que alcanza la Tierra ha sido aprovechada por el ser humano desde la antigüedad, mediante diferentes tecnologías que han ido evolucionando. Querés seguir leyendo? Hacé click sobre la imagen de la derecha!
+                <div class="textosolar">                    
+                    <span class="resumen">La energía solar es la energía que se obtiene a partir del sol, es decir, es el aprovechamiento de la radiación electromagnética procedente del Sol. Hay varias formas de utilizarla y cada una es mas interesante que la anterior. Querés seguir leyendo?</span>
                 </div>
                 <div class="imagensolar">
                     <div class="infosolar">
-                        <p class="massolar"><a href="solar.html">Leer mas</a></p>
+                        <p class="massolar"><a href="solar.html">LEER MAS</a></p>
                     </div>
                 </div>
             </div>
@@ -79,43 +79,48 @@
             <div class="info">
                 <div class="formulario-iconos">
                     <div class="formulario">
+                        <div class="escribinos">
+                            Escribinos!
+                        </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label" style="font-size: 30px;" >Escribinos!</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" style="font-weight: bold;">
                         </div>
                         <div class="mb-3">
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" style="font-weight: bold;">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribí tu comentario" maxlength="150" style="height: 200px; min-height: 100px; max-height: 200px; font-weight: bold;"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Escribí tu comentario" maxlength="150" style="height: 100%; min-height: 100%; max-height: 100%; font-weight: bold;"></textarea>
                         </div>
-                    </div>
-                    <div class="iconos">
-                        <div class="facebook">
-                            <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
-                        </div>
-                        <div class="twitter">
-                            <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <div class="youtube">
-                            <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="twitch">
-                            <a href="http://twitch.com"><i class="fab fa-twitch"></i></a>
-                        </div>
+                        <button type="button" class="btn-primary" style="background-color: rgb(21, 166, 210); border-color: rgb(21, 166, 210);">Enviar</button>
                     </div>
                 </div>
                 <div class="invitacion-mapa">
                     <div class="invitacion">
-                        Querés venir a participar de los streams? Te esperamos!
+                        Te esperamos para los streams!
                     </div>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9290.033509587678!2d-58.411919028273516!3d-34.59093816150118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca81211be089%3A0xed459e1bcb8c8e9a!2sEdenor!5e0!3m2!1ses-419!2sar!4v1634229300776!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="mapa-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.766816949435!2d-58.41766253045034!3d-34.592948821870806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca81211be089%3A0xed459e1bcb8c8e9a!2sEdenor!5e0!3m2!1ses-419!2sar!4v1634683008059!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
+            <div class="iconos">
+                <div class="facebook">
+                    <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="twitter">
+                    <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="youtube">
+                    <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="twitch">
+                    <a href="http://twitch.com"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
             <div class="derechos">
-                Todos los derechos reservados Energía Limpia 2021 - Diseño: Gabriel Lopez
+                Todos los derechos reservados.<br>
+                © 2021, Energía Limpia.<br>
+                Gabriel Lopez.
             </div>
         </footer>
     </div>
