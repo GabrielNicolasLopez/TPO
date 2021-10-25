@@ -348,6 +348,9 @@ h2{
         font-size: 25px;
         margin: 20px;
     }
+    h2{
+        font-size: 25px;
+    }
 }
 
 @media (max-width:500px){
@@ -365,6 +368,9 @@ h2{
     .contenido{
         font-size: 20px;
         margin: 10px;
+    }
+    h2{
+        font-size: 20px;
     }
 }
 
