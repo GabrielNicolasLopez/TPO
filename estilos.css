@@ -301,8 +301,8 @@ h2{
 .contenido{
     display: flex;  
     flex-flow: column;
-    align-items: center;
     text-align: justify;
+    align-items: center;
     margin: 100px;
     font-size: 30px;  
 }
@@ -348,6 +348,9 @@ h2{
         font-size: 25px;
         margin: 20px;
     }
+    h1{
+        font-size: 60px;
+    }
     h2{
         font-size: 25px;
     }
@@ -367,7 +370,10 @@ h2{
     }
     .contenido{
         font-size: 20px;
-        margin: 10px;
+        margin: 25px;
+    }
+    h1{
+        font-size: 50px;
     }
     h2{
         font-size: 20px;
