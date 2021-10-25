@@ -312,7 +312,7 @@ h2{
 
 /*---------------------------------------------*/
 
-@media all and (max-width:1000px){
+@media only screen and (max-width:1000px){
     .info{
         display: flex;
         flex-flow: column;
@@ -332,7 +332,7 @@ h2{
 }
 
 
-@media all and (max-width:900px){
+@media (max-width:900px){
     .e-eolica{
         flex-flow: column;
     }
@@ -342,9 +342,12 @@ h2{
     .resumen{
         font-size: 25px;
     }
+    .contenido{
+        font-size: 25px;
+    }
 }
 
-@media all and (max-width:500px){
+@media (max-width:500px){
     .menu{
         flex-flow: column;
         height: auto;
@@ -354,6 +357,9 @@ h2{
         margin-right: 10px;
     }
     .resumen{
+        font-size: 20px;
+    }
+    .contenido{
         font-size: 20px;
     }
 }
