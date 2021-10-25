@@ -1,6 +1,15 @@
+// ------------------------------------ VARIABLES ------------------------------------
+
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const textarea = document.querySelectorAll('#formulario textarea');
+const campos = {
+    nombre: false,
+    email: false,
+    texto: false
+}
+
+// --------------- EXPRESIONES PERMITIDAS EN CADA CAMPO DEL FORMULARIO ---------------
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]+$/,
@@ -8,10 +17,18 @@ const expresiones = {
     texto: /^[a-zA-Z0-9\_\-]+$/
 }
 
-const campos = {
-    nombre: false,
-    email: false,
-    texto: false
+// ------------------------------------ FUNCIONES ------------------------------------
+
+function cambiarNombre(){
+    var boton = document.getElementById('boton-enviar');    
+    if(campos.nombre && campos.email && campos.texto){
+        boton.innerHTML = 'Enviar';
+        document.getElementById('boton-enviar').classList.remove('btn-primary-incorrect');
+        document.getElementById('boton-enviar').classList.add('btn-primary');
+    }else{
+        boton.innerHTML = 'Rellená el formulario';
+        document.getElementById('boton-enviar').classList.add('btn-primary-incorrect');
+    }
 }
 
 const validarDatos = (e) => {
@@ -63,13 +80,6 @@ textarea.forEach((textarea) => {
     textarea.addEventListener('blur', validarTexto);
 });
 
-function cambiarNombre(){
-    var boton = document.getElementById('boton-enviar');
-    if(campos.nombre && campos.email && campos.texto){
-        boton.innerHTML = 'Enviar';
-    }else{
-        boton.innerHTML = 'Rellená el formulario';
-    }
-}
+
 
 
